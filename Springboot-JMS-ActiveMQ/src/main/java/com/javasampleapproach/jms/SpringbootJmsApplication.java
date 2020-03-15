@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
-import com.javasampleapproach.jaxb.create.JAXBXmlWR;
 
 @SpringBootApplication
 @ComponentScan("com.javasampleapproach.*")
@@ -19,26 +18,8 @@ public class SpringbootJmsApplication  implements CommandLineRunner {
 		SpringApplication app = new SpringApplication(SpringbootJmsApplication.class);		
 		app.setBannerMode(Mode.OFF);		
 		
-//		app.run(args);
-		
-		
-		
-		
-		ApplicationContext context = app.run(args);
-		JAXBXmlWR jaxbCreate = context.getBean(JAXBXmlWR.class);
-		jaxbCreate.writeJAXB();
-		
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		jaxbCreate.readJAXB();
-		
-		
-		
-//		SpringApplicsation.run(SpringbootJmsApplication.class, args);
+		app.run(args);
+
 	}
 	
 	//access command line arguments

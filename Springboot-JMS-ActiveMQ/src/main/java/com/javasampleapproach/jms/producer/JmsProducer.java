@@ -12,7 +12,7 @@ public class JmsProducer {
 	
 	@Value("${jms.queue.destination}")
 	String destinationQueue;
-	
+
 	public void send(String msg){
 		jmsTemplate.convertAndSend(destinationQueue, msg);
 	}

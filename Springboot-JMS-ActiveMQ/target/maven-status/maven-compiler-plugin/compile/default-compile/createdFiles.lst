@@ -1,6 +1,0 @@
-com\javasampleapproach\jms\client\impl\JmsClientImpl.class
-com\javasampleapproach\jms\consumer\JmsConsumer.class
-com\javasampleapproach\jms\SpringbootJmsApplication.class
-com\javasampleapproach\jms\controller\WebController.class
-com\javasampleapproach\jms\client\JmsClient.class
-com\javasampleapproach\jms\producer\JmsProducer.class
